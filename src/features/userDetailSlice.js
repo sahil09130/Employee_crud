@@ -30,7 +30,7 @@ export const showUser = createAsyncThunk(
   "showUser",
   async (args, { rejectWithValue }) => {
     const response = await fetch(
-      "https://641dd63d945125fff3d75742.mockapi.io/crud"
+      "https://648a886d17f1536d65e93689.mockapi.io/crud"
     );
 
     try {
@@ -47,7 +47,7 @@ export const deleteUser = createAsyncThunk(
   "deleteUser",
   async (id, { rejectWithValue }) => {
     const response = await fetch(
-      `https://641dd63d945125fff3d75742.mockapi.io/crud/${id}`,
+      `https://648a886d17f1536d65e93689.mockapi.io/crud/${id}`,
       { method: "DELETE" }
     );
 
@@ -67,7 +67,7 @@ export const updateUser = createAsyncThunk(
   async (data, { rejectWithValue }) => {
     console.log("updated data", data);
     const response = await fetch(
-      `https://641dd63d945125fff3d75742.mockapi.io/crud/${data.id}`,
+      `https://648a886d17f1536d65e93689.mockapi.io/crud${data.id}`,
       {
         method: "PUT",
         headers: {

@@ -17,8 +17,7 @@ const Read = () => {
 
   useEffect(() => {
     dispatch(showUser());
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [dispatch]);
 
   if (loading) {
     return <h2>Loading</h2>;
